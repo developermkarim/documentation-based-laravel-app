@@ -35,4 +35,17 @@
 
     </x-alert>
 
+    <x-badge  type="danger"  text="Deleted"/>
+
+    <x-badge type="success" text='Congratulations'/>
+
+    <x-badge type="primary" text="Welcome to My Home" />
+
+    <x-card  title="This is my Card">
+
+      {{-- <p>Name: {{ $user->name }}</p> --}}
+      <p>Name : {{ 'Mahmodul Karm' }}</p>
+
+    </x-card>
+
 @endsection

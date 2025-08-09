@@ -6,14 +6,18 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Button extends Component
+class Badge extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct()
+
+     public $type;
+     public $text;
+    public function __construct($type = 'dark', $text = '')
     {
-        //
+        $this->type = $type;
+        $this->text = $text;
     }
 
     /**
@@ -21,7 +25,6 @@ class Button extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.button');
+        return view('components.badge');
     }
 }
-
